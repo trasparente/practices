@@ -1,0 +1,4 @@
+timezone: Europe/Rome
+baseurl: /practices
+permalink: pretty
+remote_theme: giovian/ui@main
