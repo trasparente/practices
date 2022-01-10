@@ -1,4 +1,5 @@
 ---
+title: Practices
 sidebar: [sidebar, meta]
 ---
 <div class="center" markdown='1'>
