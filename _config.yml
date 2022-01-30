@@ -1,4 +1,5 @@
 timezone: Europe/Rome
+title: Practices
 baseurl: /practices
 permalink: pretty
 remote_theme: giovian/ui@main
