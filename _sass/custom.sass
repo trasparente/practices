@@ -1,2 +1,17 @@
+// Style table
 [csv-table]
   @extend .mh-auto, .border-secondary
+
+// Color boxes
+.csv-blocks > div.present
+  &[title*='serie: 1']
+    @extend .green
+  &[title*='serie: 2']
+    @extend .red
+
+// Color table cells
+td[headers='serie']
+  &[value='1']
+    @extend .green
+  &[value='2']
+    @extend .red
