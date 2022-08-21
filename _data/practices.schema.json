@@ -9,10 +9,12 @@
         "type": "string",
         "format": "date",
         "default": "today",
-        "class": "inline"
+        "class": "inline",
+        "autocomplete": "off"
       },
       "serie": {
         "type": "integer",
+        "class": "inline",
         "enum": [
           1,
           2,
