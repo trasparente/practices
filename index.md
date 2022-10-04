@@ -9,4 +9,7 @@ title: Practices
 {% include widgets/csv-counter.html file='practices' days='30' title='Month' %}
 {% include widgets/csv-counter.html file='practices' days='182' title='Six months' %}
 {% include widgets/csv-counter.html file='practices' days='365' title='Year' %}
-{% include widgets/csv-counter.html file='practices' days='2190' title='Six years' %}
+{%- assign now = site.time | date: "%s" -%}
+{%- assign days = site.data.practices | sort: 'date' | first | map: 'date' | first | date: "%s" | minus: now | abs | divided_by: 86400 -%}
+{%- assign title = days | divided_by: 365.0 | round: 1 | append: ' Years' -%}
+{% include widgets/csv-counter.html file='practices' days=days title=title %}
